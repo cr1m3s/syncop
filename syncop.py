@@ -4,11 +4,18 @@ import hashlib
 import json
 import shutil
 import sys
+import os
+import subprocess
 import argparse
 import logging
+import platform
 from _hashlib import HASH as Hash
 from pathlib import Path
-from typing import Union, Dict, List 
+from typing import Union, Dict, List
+
+HASH_FILE = 'dump_hash.json'
+LINUX_PATH = os.path.expanduser('~/bin')
+
 
 def setup_logging(log_file):
     logging.basicConfig(
@@ -22,83 +29,108 @@ def setup_logging(log_file):
     )
 
 
+def copy_script_to_path(os_platform: str) -> str:
+    script_path = os.path.abspath(__file__)
+    script_name = os.path.basename(script_path)
+    target_path = None
+
+    if os_platform == 'Windows':
+        pass
+    elif os_platform == 'Linux':
+        target_path = os.path.join(LINUX_PATH, script_name)
+
+    if script_path != target_path:
+        logging.info(f"Copying script to {target_path}.")
+        shutil.copy2(script_path, target_path)
+        os.chmod(target_path, 0o755)
+    else:
+        logging.info(f"Script already present in {target_path}.")
+
+    return target_path
+
+
+def check_cron_job(command: str) -> bool:
+    logging.info("Checking cron job presence.")
+    result = subprocess.run(['crontab', '-l'], capture_output=True, text=True)
+    return command in result.stdout
+
+
+def create_cron_job(command: str, cron_interval: str) -> None:
+    logging.info("Creating cron job.")
+    cron_line = f"{cron_interval} {command}"
+    subprocess.run(f'echo "{cron_line}" | crontab', shell=True, check=True)
+    logging.info(f"Cron job *{cron_line} created.")
+
+
+def setup_cronjob(source_name: str, replica_name: str, interval: int, logs: str) -> None:
+    logging.info("Starting syncop setup.")
+    logging.info("Detecting operating system platform.")
+    os_platform = platform.system()
+    cron_interval = ""
+
+    if interval < 1 or interval > 59:
+        logging.info('Wrong interval [1 > interval or interval > 59].')
+        logging.info('Cron job timer set up  to 1 hour.')
+        cron_interval = "* * * * *"
+    else:
+        logging.info(f'Cron job set up to each {interval} minutes.')
+        cron_interval = f'*/{interval} * * * *'
+
+    if os_platform == 'Windows':
+        logging.info("Windows system detected.")
+        pass
+    elif os_platform == 'Linux':
+        logging.info("Linux system detected.")
+        script_path = copy_script_to_path(os_platform)
+
+        command = f"python3 {script_path} -s {source_name} -r {replica_name} -i {interval} -l {logs}"
+        
+        if check_cron_job(command):
+            logging.info("Cronjob already exist.")
+            return
+        else:
+            logging.info("Cron job not found.")
+            create_cron_job(command, cron_interval)
+          
+    logging.info("syncop setup finished.")
+
+
 def file_hash(file_path: Union[str, Path]) -> Hash:
     with open(file_path, "rb") as file:
         file_hash = hashlib.md5()
         while chunck := file.read(4096):
             file_hash.update(chunck)
 
-    logging.info(f"Generating hash for {file_path.name}: {file_hash.hexdigest()}")
     return file_hash.hexdigest()
 
 
 def dir_hash(dir_path: Union[str, Path]) -> Dict[str, Hash]:
-    logging.info(f"Generating hash for files in {dir_path.name}")
+    dir_abspath = str( Path.cwd() / dir_path )
+    logging.info(f"Generating hash for files in {dir_abspath} direcotry.")
     assert dir_path.is_dir()
-    dir_path = dir_path.resolve()
     hashes = {}
-    dir_key = str(Path.cwd() / dir_path)
-    hashes[dir_key] = {}
+    hashes[dir_abspath] = {}
     for path in sorted(dir_path.iterdir(), key=lambda p: str(p).lower()):
         path_key = str(Path.cwd() / path)
         if path.is_file():
-            hashes[dir_key][path_key] = file_hash(path)
+            hashes[dir_abspath][path_key] = file_hash(path)
         elif path.is_dir():
-            hashes[dir_key][path_key] = list(dir_hash(path).values())[0]
+            hashes[dir_abspath][path_key] = list(dir_hash(path).values())[0]
 
     return hashes
 
 
-# def dir_hash(dir_path: Union[str, Path]) -> Dict[str, Hash]:
-#    assert dir_path.is_dir()
-#    dir_path = dir_path.resolve()
-#    hashes = {}
-#    hashes[dir_path.name] = {}
-#    for path in sorted(dir_path.iterdir(), key=lambda p: str(p).lower()):
-#        if path.is_file():
-#            hashes[dir_path.name][path.name] = file_hash(path)
-#        elif path.is_dir():
-#            hashes[dir_path.name][path.name] = list(dir_hash(path).values())[0]
-#
-#    return hashes
-
-
-# def json_compare(json1, json2, changes=[], missing=[], base=""):
-#    # Compare all keys
-#    for key in json1.keys():
-#        # if key exist in json2:
-#        new_base = f"{base}/{key}" if base else key
-#        if key in json2.keys():
-#            # If subjson
-#            if type(json1[key]) == dict:
-#                json_compare(json1[key], json2[key], changes, missing, new_base)
-#            else:
-#                if json1[key] != json2[key]:
-#                    # print("These entries are different:")
-#                    # print(f"{key}: {json1[key]}/{json2[key]}")
-#                    changes.append(new_base)
-#        else:
-#            # print(f"found new item: {key}:{json1[key]}")
-#            missing.append(new_base)
-#    return changes, missing
-
-
 def json_compare(json1: Dict, json2: Dict, changes: List=[], missing: List=[]) -> Union[List, List]:
-    # Compare all keys
     for key in json1.keys():
-        # if key exist in json2:
         if key in json2.keys():
-            # If subjson
             if type(json1[key]) is dict:
                 json_compare(json1[key], json2[key], changes, missing)
             else:
                 if json1[key] != json2[key]:
-                    # print("These entries are different:")
-                    # print(f"{key}: {json1[key]}/{json2[key]}")
                     changes.append(key)
         else:
-            # print(f"found new item: {key}:{json1[key]}")
             missing.append(key)
+
     return changes, missing
 
 
@@ -153,34 +185,44 @@ if __name__ == "__main__":
             parser.print_help(sys.stderr)
             sys.exit(1)
 
-    setup_logging(args.logs)
-    
     source_name = Path.cwd() / args.source
     replica_name = Path.cwd() / args.replica
+
+    setup_logging(args.logs)
+    setup_cronjob(source_name, replica_name, args.interval, args.logs)
+    
     source_hashes = dir_hash(source_name)
     logging.info(f"Starting synchronization for {source_name} -> {replica_name}")
+    config_file = Path(f"{replica_name}/{HASH_FILE}")
+    logging.info(f'Looking for {replica_name}/{HASH_FILE} file.')
+    dump_json = {}
 
-    config_file = Path(f"{replica_name}/sync_config.json")
-
-    logging.info(f'Looking for {replica_name}/dump_config.json file.')
     if config_file.is_file():
-        logging.info(f"Found {replica_name}/dump_config.json, loading it.")
-        config_json = {}
+        logging.info(f"Found {replica_name}/{HASH_FILE}, reading it.")
         with open(config_file, "r") as config:
-            config_json = json.load(config)
+            dump_json = json.load(config)
     else:
-        logging.warning(f'Cannot find {replica_name}/dump_config.json file.')
+        logging.warning(f'Cannot find {replica_name}/{HASH_FILE} file.')
+    
+    if replica_name.is_dir() and not config_file.is_file():
+        logging.info(f"Found {replica_name} directory.")
+        logging.info(f"Generating hashes for files in {replica_name} directory.")
+        dump_json = dir_hash(replica_name)
+    
+    if not replica_name.is_dir():
+        logging.info(f"Directory {replica_name} not found.")
         logging.warning(f'Start copying content of {source_name} into {replica_name}')
         shutil.copytree(Path(source_name), Path(replica_name))
         with open(config_file, "w") as config:
-            logging.info(f'Saving files hashes into {replica_name}/dump_config.json')
+            logging.info(f'Saving files hashes into {replica_name}/{HASH_FILE}')
             json.dump(source_hashes, config, indent=4)
+        logging.info(f"Copying of content from {source_name} to {replica_name} finished. Synchronization done.")
         sys.exit()
 
     nl = "\n"
 
     logging.info('Looking for new and updated files and directories.')
-    updated, created = json_compare(source_hashes, config_json)
+    updated, created = json_compare(source_hashes, dump_json)
     
     if created:
         logging.info(f'Created: {nl.join([str(i) for i in created])}')
@@ -188,7 +230,7 @@ if __name__ == "__main__":
         logging.info(f'Updated: {nl.join([str(i) for i in updated])}')
 
     logging.info('Looking for deleted files and directories.')
-    _, deleted = json_compare(config_json, source_hashes, changes=[], missing=[])
+    _, deleted = json_compare(dump_json, source_hashes, changes=[], missing=[])
     
     if deleted:
         logging.info(f'Deleted: {nl.join([str(i) for i in deleted])}')
@@ -196,5 +238,7 @@ if __name__ == "__main__":
     append_operations(deleted, created, updated, source_name, replica_name)
 
     with open(config_file, "w") as config:
-        logging.info(f'Saving new files hashes into {replica_name}/dump_config.json')
+        logging.info(f'Saving new files hashes into {replica_name}/{HASH_FILE}')
         json.dump(source_hashes, config, indent=4)
+
+    logging.info(f"Synchronization of {source_name} -> {replica_name} done.")
