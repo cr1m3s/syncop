@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-curl https://sapwebdisp01.cz.foxconn.com:4300/orion/polaris/ssn_mac_pwd_license?SERIAL_NUMBER=$1 | jq

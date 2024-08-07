@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-if [[ -z $1 ]];then
-  echo "You need to provide server SN"
-  exit 1
-fi
-
-curl -s  https://sapwebdisp01.cz.foxconn.com:4300/orion/polaris/ssn_mac_pwd_license?SERIAL_NUMBER=$1 | jq '."DATA"."ILO_PASSWORD"'
