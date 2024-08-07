@@ -149,7 +149,7 @@ def json_compare(
 ) -> Tuple[List, List]:
     for key in json1.keys():
         if key in json2.keys():
-            if type(json1[key]) is dict:
+            if isinstance(json1[key], dict):
                 json_compare(json1[key], json2[key], changes, missing)
             else:
                 if json1[key] != json2[key]:
@@ -161,7 +161,7 @@ def json_compare(
 
 
 def append_operations(
-    deleted: List, created: List, update: List, source_name: str, replica_name: str
+    deleted: List, created: List, updated: List, source_name: str, replica_name: str
 ) -> None:
 
     for item in deleted:
@@ -264,7 +264,6 @@ if __name__ == "__main__":
         sys.exit()
 
     nl = "\n"
-
     logging.info("Looking for new and updated files and directories.")
     updated, created = json_compare(source_hashes, dump_json)
 
