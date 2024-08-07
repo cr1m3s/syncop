@@ -25,6 +25,8 @@ def setup_logging(log_file):
     )
 
 
+# try, catch -- used only for parts that crushed script
+# TODO: add more exception handlers
 def copy_script_to_path(os_platform: str) -> Path:
     script_path = Path(os.path.abspath(__file__))
     script_name = script_path.name
@@ -32,6 +34,9 @@ def copy_script_to_path(os_platform: str) -> Path:
 
     if os_platform == "Windows":
         target_path = Path(WINDOWS_PATH) / script_name
+
+    if not Path(LINUX_PATH).is_dir():
+        target_path.mkdir(parents=True, exist_ok=True)
 
     if script_path != target_path:
         logging.info(f"Copying script to {target_path}.")
@@ -43,6 +48,8 @@ def copy_script_to_path(os_platform: str) -> Path:
     return target_path
 
 
+# Not sure about all code that supposed to work on windows
+# But so far it somehow worked 
 def check_scheduled_task(task_name: str) -> bool:
     result = subprocess.run(
         ["schtasks", "/Query", "/TN", task_name],
@@ -130,7 +137,6 @@ def file_hash(file_path: Union[str, Path]) -> Hash:
 
 def dir_hash(dir_path: Path) -> Dict[str, Hash]:
     dir_abspath = str(Path.cwd() / dir_path)
-    logging.info(f"Generating hash for files in {dir_abspath} direcotry.")
     assert dir_path.is_dir()
     hashes = {}
     hashes[dir_abspath] = {}
@@ -144,6 +150,8 @@ def dir_hash(dir_path: Path) -> Dict[str, Hash]:
     return hashes
 
 
+# For sure there are some better ways to do this comparsion
+# TODO: find better ways to compare dictionaries
 def json_compare(
     json1: Dict, json2: Dict, changes: List = [], missing: List = []
 ) -> Tuple[List, List]:
@@ -160,6 +168,9 @@ def json_compare(
     return changes, missing
 
 
+# Copy only one operation that require 2 args source and dest
+# previous attempt to rewrite was not much better
+# TODO: rewrite it into something better
 def append_operations(
     deleted: List, created: List, updated: List, source_name: str, replica_name: str
 ) -> None:
@@ -226,11 +237,14 @@ if __name__ == "__main__":
     setup_logging(args.logs)
     setup_cronjob(source_name, replica_name, args.interval, args.logs)
 
-    source_hashes = dir_hash(source_name)
     logging.info(f"Starting synchronization for {source_name} -> {replica_name}")
     config_file = Path(f"{replica_name}/{HASH_FILE}")
     logging.info(f"Looking for {replica_name}/{HASH_FILE} file.")
     dump_json = {}
+
+    logging.info(f"Generating file hashes for files in {source_name} directory has started.")
+    source_hashes = dir_hash(source_name)
+    logging.info(f"Generating file hashes for files in {source_name} directory is complete.")
 
     if config_file.is_file():
         logging.info(f"Found {replica_name}/{HASH_FILE}, reading it.")
@@ -251,10 +265,10 @@ if __name__ == "__main__":
             shutil.copytree(Path(source_name), Path(replica_name))
             logging.info(f"Copied directory from {source_name} to {replica_name}.")
         except FileNotFoundError as e:
-            logging.error(f"Failed to copy directory: {e}")
+            logging.error(f"Failed to copy directory: {e}.")
             logging.error("Please check if the source directory exists.")
         except Exception as e:
-            logging.error(f"An unexpected error occurred: {e}")
+            logging.error(f"An unexpected error occurred: {e}.")
         with open(config_file, "w") as config:
             logging.info(f"Saving files hashes into {replica_name}/{HASH_FILE}")
             json.dump(source_hashes, config, indent=4)
@@ -276,12 +290,12 @@ if __name__ == "__main__":
     _, deleted = json_compare(dump_json, source_hashes, changes=[], missing=[])
 
     if deleted:
-        logging.info(f"Deleted: {nl.join([str(i) for i in deleted])}")
+        logging.info(f"Deleted: {nl.join([str(i) for i in deleted])}.")
 
     append_operations(deleted, created, updated, source_name, replica_name)
 
     with open(config_file, "w") as config:
-        logging.info(f"Saving new files hashes into {replica_name}/{HASH_FILE}")
+        logging.info(f"Saving new files hashes into {replica_name}/{HASH_FILE}.")
         json.dump(source_hashes, config, indent=4)
 
     logging.info(f"Synchronization of {source_name} -> {replica_name} done.")
