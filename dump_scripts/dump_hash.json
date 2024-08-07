@@ -1,0 +1,204 @@
+{
+    "/home/cr1m3s/Code/scripts": {
+        "/home/cr1m3s/Code/scripts/cbis_ports": "c896a05f57dcc2fdfd761b9fcc96aacb",
+        "/home/cr1m3s/Code/scripts/nsw": {
+            "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit": {
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection": {
+                    "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data": {
+                        "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log": {
+                            "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW": {
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506BN.json": "d579baf69a188752d8065190dfd5193c",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506BQ.json": "2bffedfd3e3a00be0afd018e0734c376",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506BR.json": "16bd2cce9143cd80dedbdc4e1a8e227f",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C3.json": "8f68ef23c164585fd8cfa27b69a017d5",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C4.json": "76fd4ec7257d5c9ac8bfd2a94550a03f",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C5.json": "a6edb81e4771fca36aeb897de4bd607c",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C6.json": "23e6b7fb5e1e2c795cd0e1697f63f1d2",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C7.json": "a0d3e8c39beaa5422d7a74e6567e662d",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C8.json": "cf6d319d380a5bf53a967bb369545073",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506C9.json": "d7f1b27d644f0a733d807663da4d916c",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CB.json": "609a4e668032a879d7943a3ce5884f68",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CC.json": "ea370b0fd8d7f12bb0580c7840af2fd7",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CD.json": "01b34d8d81c3e43ba8125450fa1d2abf",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CF.json": "18b405c2a00845fde53243a782fe741a",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CG.json": "21070d9199dd8733ad8550e3baa574e7",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CH.json": "b0fdaad7495a148eb21df2ac1a0141fc",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CJ.json": "135f1ca8d15d6ef23c9f1a0a5f04d041",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CK.json": "ef06e756e8f2d484315c64fe75d0acc6",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CL.json": "64040d2ab5a7325d267082ed72c6c27f",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CM.json": "a19145ac515e063e25af6a3ef5f5bd24",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CN.json": "3e8100e77a5ed07b8682406b1284dafb",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CQ.json": "0dd97ec1e869a8366b79d5aae5b71983",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CR.json": "04a3bb5020eedabc9671ed11c30b8825",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CS.json": "b06e23d0359f3c0ca4aeb493ea763552",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CT.json": "09393b09557bd458923dc6ea35c24185",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CV.json": "ac81381470906ea59d8c891870e7d1a4",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CW.json": "e7a511421f38652e0bda9a08f07e2640",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CX.json": "8b6056c13e8d1bbb4ac323b8f0b5a0b1",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CY.json": "802bdee153093fb05848db4e35532569",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506CZ.json": "856d8e815449bc55c09d48222ff26e6f",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506D0.json": "7b084b43872c335dbae2a834e7a57efc",
+                                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/data/log/NokiaNSW/ilorest_clone_CZ242506D1.json": "17109f65c2f5dc53bde65ed69face8fa"
+                            }
+                        }
+                    },
+                    "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/datacollection-gen11.py": "3691f887fbdf5c75fac75efc0dfdeb89",
+                    "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/datacollection-gen11.sh": "ced87f59a70449478468e28f74497fac",
+                    "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/hosts": "89ee290ef919393153ba41b2d029ea93",
+                    "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/ipmapping": "ebeaa0c22ea5b5cc0b2c4142ada1b113",
+                    "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/log": {
+                        "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/datacollection/log/7101759762": {}
+                    }
+                },
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/fw_check.py": "eeed0870edc9b0c672129348192ca185",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/FW_full.txt": "4264adaf9b449fe8827684d95ca71d34",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/ipmapping_no_spp.py": "30971ebbee9088cd8b3fd765c071bcc7",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/ipmapping_spp.py": "128684eca739282003d6421582101989",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/op-datacollection-gen11.sh": "e018e5a5bcf7c4a2c8da6e285afc70b7",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/README.txt": "d9599a580af23b987edc57228b565b77",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/spp_check.py": "fa97cc3871385569a267120f976fa867",
+                "/home/cr1m3s/Code/scripts/nsw/ansible_toolkit/uloc.txt": "d6e68d8e095c798cdb0bd2e8a5be01ad"
+            },
+            "/home/cr1m3s/Code/scripts/nsw/datacollection": {
+                "/home/cr1m3s/Code/scripts/nsw/datacollection/excel_format.py": "2d016c6f3c9ba8517719c24739f61f28",
+                "/home/cr1m3s/Code/scripts/nsw/datacollection/Nokia_DataCollection_Cust_Cascadelake_.xlsx": "24d7d81781bf65bc79ce7f45062f6d00",
+                "/home/cr1m3s/Code/scripts/nsw/datacollection/Nokia_DataCollection_Cust_Icalake_.xlsx": "350d43afe2a0106b3e534ebcc60a1a04",
+                "/home/cr1m3s/Code/scripts/nsw/datacollection/Nokia_DataCollection_Cust_Sapphire_Rapids_.xlsx": "fb3e4a79b78c5800f605e06a72593d75"
+            },
+            "/home/cr1m3s/Code/scripts/nsw/datacollection_gen11.py": "dcaa7239a571743c5b38fd0667ade418",
+            "/home/cr1m3s/Code/scripts/nsw/flash": {
+                "/home/cr1m3s/Code/scripts/nsw/flash/deploy.sh": "1bf80c671baedf1deb6d2046b998af6c",
+                "/home/cr1m3s/Code/scripts/nsw/flash/ip.txt": "c3edf3549bf1d9a8d0091b1a9cd23ab8",
+                "/home/cr1m3s/Code/scripts/nsw/flash/red_flash.py": "25c240459a85fbc0623fbd34b3171bba"
+            },
+            "/home/cr1m3s/Code/scripts/nsw/fw_check": {
+                "/home/cr1m3s/Code/scripts/nsw/fw_check/check_passw.sh": "8c7464c60b35f7e7fba54dce04c4ea07",
+                "/home/cr1m3s/Code/scripts/nsw/fw_check/FW_full.txt": "5fb97938b242efc87120b1d100464357",
+                "/home/cr1m3s/Code/scripts/nsw/fw_check/ilorest_check.py": "048214fba05d8989ce636b02bb6ccf4f",
+                "/home/cr1m3s/Code/scripts/nsw/fw_check/ilorest_full": "3de9ff53a2ea8fdb1cc39a73e61ff663",
+                "/home/cr1m3s/Code/scripts/nsw/fw_check/start": "9003961ee1decaef01864de8cf75bc69"
+            },
+            "/home/cr1m3s/Code/scripts/nsw/fw_check.py": "b27f15c37df44965bac6a0ddb4472642",
+            "/home/cr1m3s/Code/scripts/nsw/HPE_MR416i-p_Gen11_52.24.3-4948_B.fwpkg": "eb37c53342fda0ccaf22bbfe05df74db",
+            "/home/cr1m3s/Code/scripts/nsw/ilorest.txt": "42c9c460f3c1e65eeb951aec5b41d545",
+            "/home/cr1m3s/Code/scripts/nsw/ipmapping": {
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/first_spp_check.py": "36ec01d8cb4c3c4ff6555d1d4db9daee",
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/new_ipmapping.py": "f3a47620dcdf22e11ea87d60266c1b92",
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/README.txt": "b3cc34d7bf2b75f38933c0b724c0eb30",
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/second_spp_check.py": "10abd27e910f11276da8619f201e2fdf",
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/spp_ipmapping.py": "1c129af58d56a78621f1769cbee5bd71",
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/test_async.py": "40b1b1e4ebf1073bcd296c9a25e9f447",
+                "/home/cr1m3s/Code/scripts/nsw/ipmapping/uloc.txt": "b24c36b66f143075c5e06614d4e7eca8"
+            },
+            "/home/cr1m3s/Code/scripts/nsw/ipmapping_spp.py": "b8a98d59c22dd71d9080e073550e9ca9",
+            "/home/cr1m3s/Code/scripts/nsw/old_gold": {
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/datacollection": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/datacollection/excel_format.py": "675ec8aeb5f03f4318ee884498da088a",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/datacollection/Nokia_DataCollection_Cust_Cascadelake_.xlsx": "24d7d81781bf65bc79ce7f45062f6d00",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/datacollection/Nokia_DataCollection_Cust_Icalake_.xlsx": "350d43afe2a0106b3e534ebcc60a1a04",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/datacollection/Nokia_DataCollection_Cust_Sapphire_Rapids.xlsx": "fb3e4a79b78c5800f605e06a72593d75"
+                },
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/fw_check": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/fw_check/check_passw.sh": "8c7464c60b35f7e7fba54dce04c4ea07",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/fw_check/FW_full.txt": "804e739c5d83688ae0f928f6b73153b1",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/fw_check/ilorest_check.py": "6a5b15fd022ea33b75461bced754865b",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/fw_check/ilorest_full": "3de9ff53a2ea8fdb1cc39a73e61ff663",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/fw_check/start": "9003961ee1decaef01864de8cf75bc69"
+                },
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/11:38_Mar24_2023.txt": "2ed8e26c7d05fdddbb96171cedebbc0b",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/11_37_Mar27_2023.txt": "45c499a4e7ccb8a7b3295bbe38b02dab",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/ilo_cfg.xml": "0ac14abebd1798b3de91d62bd60fbcfd",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/ilo_cfg_full.xml": "2373aa82d79f902e1d6b67eaab9b469a",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/ilo_cfg_old.xml": "5f6146f8e27c0986eca489d3e67a422e",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/locfg.pl": "960020ff1dbf951e5ab62a2ba8c8b897",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/log.txt": "0313d3a7b92cd3fc2e16c6b750d3c1b0",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/rack1.txt": "fe664a27947a26361a265ac4d1e211c5",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/rack2.txt": "54f606fc089970ab3ee0fae1ddee0012",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/rack3.txt": "b3f30a1121dd83a556f560b775de7510",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ilo_cfg/reader.py": "8fff1a88d0ca6cab0861533fc9920c84"
+                },
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/ilorest.txt": "42c9c460f3c1e65eeb951aec5b41d545",
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/ipmapping": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ipmapping/first_spp_check.py": "36ec01d8cb4c3c4ff6555d1d4db9daee",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ipmapping/new_ipmapping.py": "30971ebbee9088cd8b3fd765c071bcc7",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ipmapping/README.txt": "b3cc34d7bf2b75f38933c0b724c0eb30",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ipmapping/second_spp_check.py": "10abd27e910f11276da8619f201e2fdf",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/ipmapping/uloc.txt": "061e72acf307ab0f1aa1f82769c04c58"
+                },
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords/foo.txt": "739f2748e5c193201acfe805db33fd97",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords/get_license.py": "0e97414fb057aeec79e49eb691609da3",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords/get_pswd.py": "86cbf7895f2a091be27d85c391f6d8bd",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords/rack1.txt": "fe664a27947a26361a265ac4d1e211c5",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords/rack2.txt": "84d31b35ca5e5cfa93dd894737bff685",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/passwords/servers.txt": "9e2f50225ddbdac50678f36c112a1e4a"
+                },
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/12_03_Oct12_2023.txt": "61a5022800d7fe8afa4f84ec666741d8",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/12_15_Oct03_2023.txt": "f5da945cac66a1d661a144ab54158d56",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/locfg.pl": "960020ff1dbf951e5ab62a2ba8c8b897",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs": {
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/10_32_Jul26_2023.txt": "548cf8e0febf715e275c5e90ea4cedaf",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/10_58_Aug04_2023.txt": "8f219e9976fdb0e7bb2004569674ee24",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/11_34_Apr23_2023.txt": "885dc16af88236c6f6ac822c37e2b840",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/11_39_Aug03_2023.txt": "be32fcdaf20a875739f6bf0f3773b80f",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/12_21_Aug15_2023.txt": "afa0bf819781c519abc3f48cca79bb52",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/12_23_Apr06_2023.txt": "d41d8cd98f00b204e9800998ecf8427e",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/12_24_Apr06_2023.txt": "ef41214c97eb9eaeaef66f0ce5210fd3",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/12_25_Apr06_2023.txt": "4c219e71bc96f5bd194738039c8a8848",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/2_28_Aug11_2023.txt": "f42e8133bc57955911272fdc1aacd806",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/2_42_Jul25_2023.txt": "de8200474847378e83728bd19e465a36",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/3_23_Jul25_2023.txt": "efb25be324083170b5859d7d34e9d9c4",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/8_35_Jul28_2023.txt": "3e02569db98ab178123d0505bd4b5a98",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/logs/8_44_Jul20_2023.txt": "f950c18301d2092f1057ff8cc57fa7a5"
+                    },
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/reset.xml": "88880f527291d088bf44d6dc927c098b",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/reset_ilo/reset_ilo.py": "52595b703c27ca4276d902cba99fa1e6"
+                },
+                "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files": {
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/foo.txt": "0d998cd8c1bb46527c505ed790cc5fac",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/ilorest_check.py": "504a24d533c694c4886ab2e96dfe6cf4",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/ilorest_full": "a9003e6de59cac6b05ec774cba67ea22",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/ilorest_params": "f7b78b5152f9f3babbe105e63d4c0325",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/ilorest_reduce.sh": "e1495ff9eca91bab82c3255e54e544d9",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/ilorest_reduced": "f992dc7498ea80d15d58c68e2cd47fba",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/ipmapping.py": "449fda91284961a42b383110f87eedb9",
+                    "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/old": {
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/old/check_passw.sh": "8c7464c60b35f7e7fba54dce04c4ea07",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/old/ilorest_full": "5876f82330107eccae560dd5c1e66e60",
+                        "/home/cr1m3s/Code/scripts/nsw/old_gold/useless_files/old/ilorest_reduced": "d41d8cd98f00b204e9800998ecf8427e"
+                    }
+                }
+            },
+            "/home/cr1m3s/Code/scripts/nsw/sfng": {}
+        },
+        "/home/cr1m3s/Code/scripts/prometh": {
+            "/home/cr1m3s/Code/scripts/prometh/hash_table": {},
+            "/home/cr1m3s/Code/scripts/prometh/inversion": {
+                "/home/cr1m3s/Code/scripts/prometh/inversion/input_1000_100.txt": "060392e33153036a4acf6c4a852a8ab9",
+                "/home/cr1m3s/Code/scripts/prometh/inversion/input_1000_5.txt": "9a95f1a8992d060eafde59c96919dede",
+                "/home/cr1m3s/Code/scripts/prometh/inversion/inversion.py": "8d07525c6c482890e86eb7ba16d7a407",
+                "/home/cr1m3s/Code/scripts/prometh/inversion/inversions.py": "282fd52cf91b6103d7d886c5ee06eb07"
+            },
+            "/home/cr1m3s/Code/scripts/prometh/pyramids": {
+                "/home/cr1m3s/Code/scripts/prometh/pyramids/input_16_10000.txt": "7bfd7538f12aba38e8570c5f51b78648",
+                "/home/cr1m3s/Code/scripts/prometh/pyramids/pyramid.py": "e4d8308b36428931d1acf362cf7d8993"
+            },
+            "/home/cr1m3s/Code/scripts/prometh/quick_sort": {
+                "/home/cr1m3s/Code/scripts/prometh/quick_sort/input__10000.txt": "31d63b32652e3d457f7b0c084b0019a8",
+                "/home/cr1m3s/Code/scripts/prometh/quick_sort/quick_sort.py": "f05793deafc15500e4e03fb2a384f418"
+            },
+            "/home/cr1m3s/Code/scripts/prometh/radix_sort": {
+                "/home/cr1m3s/Code/scripts/prometh/radix_sort/anagrams.txt": "c527b289b77bd5c7d2851ca728471685",
+                "/home/cr1m3s/Code/scripts/prometh/radix_sort/count.py": "fee91389bf07d4e94c7cd41d4e54f778",
+                "/home/cr1m3s/Code/scripts/prometh/radix_sort/sort.py": "af65d2b113cfa373df3add04b2d40d05"
+            }
+        },
+        "/home/cr1m3s/Code/scripts/scp_ansible": "baeabe7dd7d89e377968e7d3d7c01525",
+        "/home/cr1m3s/Code/scripts/server_bom": "4d54e7aa377d241f3e3b510ba5a7c6ac",
+        "/home/cr1m3s/Code/scripts/server_info": "2481ea3785a3319e0418db5b46769a10",
+        "/home/cr1m3s/Code/scripts/server_pswd": "a2569259a442fdc7706ed9763cb07f71",
+        "/home/cr1m3s/Code/scripts/strXor.py": "ec5f2fa78f7e0113c5ecc3d1a1d2aced"
+    }
+}

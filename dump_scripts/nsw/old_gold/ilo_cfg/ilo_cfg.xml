@@ -1,0 +1,13 @@
+<RIBCL VERSION="2.0">
+  <LOGIN USER_LOGIN="Administrator" PASSWORD="{PSWD}">
+    <RIB_INFO MODE="write">
+      <MOD_NETWORK_SETTINGS>
+        <DHCP_ENABLE VALUE="N"/>
+        <DNS_NAME VALUE="{HOST}"/>
+        <IP_ADDRESS VALUE="{IP}"/>
+        <SUBNET_MASK VALUE="{MASK}"/>
+        <GATEWAY_IP_ADDRESS VALUE="{GATEWAY}"/>
+      </MOD_NETWORK_SETTINGS>
+    </RIB_INFO>
+  </LOGIN>
+</RIBCL>

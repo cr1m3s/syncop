@@ -1,0 +1,480 @@
+Firmware check for server: UL: U40, SN: CZ230903NB, IP: 192.168.121.248
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D2:9A : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U39, SN: CZ230903N9, IP: 192.168.121.228
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:21:78 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U38, SN: CZ230903N8, IP: 192.168.121.187
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D2:A6 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U37, SN: CZ230903MS, IP: 192.168.121.173
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:23:24 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U36, SN: CZ230903MR, IP: 192.168.121.222
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:21:18 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U35, SN: CZ230903MQ, IP: 192.168.121.78
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D3:B2 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U34, SN: CZ230903N1, IP: 192.168.121.208
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:21:1C : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U33, SN: CZ230903N0, IP: 192.168.121.207
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Mellanox Network Adapter - B8:3F:D2:59:20:F0 : 26.34.1002
+Mellanox ConnectX-6 LX OCP3.0 : 26.34.1002
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U32, SN: CZ230903MZ, IP: 192.168.121.168
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D2:A2 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U31, SN: CZ230903N6, IP: 192.168.121.140
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D2:96 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U30, SN: CZ230903N7, IP: 192.168.121.148
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:21:00 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U29, SN: CZ230903N5, IP: 192.168.121.123
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:21:10 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U28, SN: CZ230903N4, IP: 192.168.121.226
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:21:88 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U27, SN: CZ230903N3, IP: 192.168.121.128
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:59:20:74 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U26, SN: CZ230903MN, IP: 192.168.121.181
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D3:A6 : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+
+Firmware check for server: UL: U25, SN: CZ230903MM, IP: 192.168.121.136
+Results:
+iLOrest : RESTful Interface Tool version 3.5.1.0
+Copyright (c) 2014-2022 Hewlett Packard Enterprise Development LP
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Discovering data...Done
+------------------------------------------------
+Firmware Information
+------------------------------------------------
+iLO 5 : 2.72 Sep 04 2022
+System ROM : U46 v1.64 (08/11/2022)
+Intelligent Platform Abstraction Data : 11.3.0 Build 36
+System Programmable Logic Device : 0x15
+Power Management Controller Firmware : 1.0.8
+Power Supply Firmware : 2.00
+Power Supply Firmware : 2.00
+Innovation Engine (IE) Firmware : 1.0.0.22
+Server Platform Services (SPS) Firmware : 4.4.4.202
+Server Platform Services (SPS) Descriptor : 1.3 0
+Redundant System ROM : U46 v1.64 (08/11/2022)
+Intelligent Provisioning : 3.81.2
+Power Management Controller FW Bootloader : 1.1
+TPM Firmware : 73.64
+Nvidia Network Adapter - B8:3F:D2:57:D3:BE : 26.33.1048
+Mellanox ConnectX-6 LX OCP3.0 : 26.33.1048
+Embedded SATA Controller #1 : N/A
+Embedded Video Controller : 2.5
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+8 SFF 12G x1SAS UBM6 BC BP : 1.00
+

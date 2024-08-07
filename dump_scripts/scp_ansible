@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+
+if [[ "$1" = "-h" ]]; then
+  echo "Use -s to specify ansible server i.e. 240/245/249"
+  echo "Use -l to specify LO  that you want to copy i.e. 710..."
+  exit 0
+fi
+
+while getopts s:l: flag; do
+  case "${flag}" in
+    s) server="172.16.27.${OPTARG}";;
+    l) lo=${OPTARG};;
+    *) echo "Unknown argument"
+       exit 1;;
+  esac
+done
+
+if [[ -z ${server} ]];then
+  echo "You need to specify ansible server i.e.: -s 240"
+  exit 1
+fi
+
+if [[ -z ${lo} ]];then
+  echo "You need to provide LO i.e.: -l 710..."
+  exit 1
+fi
+
+scp -r root@${server}:/data/sfng/log/${lo} .

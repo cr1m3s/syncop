@@ -1,0 +1,77 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+#Common variables
+[all:vars]
+#Default log in for Ansible is "root", we changed to "administrator"
+ansible_ssh_user=administrator
+#Ansible uses "administrator" as default log in for iLO
+username=administrator
+
+#Main group of sub-groups
+[myhosts:children]
+hpe
+
+#Specific variables for "myhosts" group of servers
+[myhosts:vars]
+#Add additional iLO user "ADD"
+new_user=admin
+new_pass=admin
+role_id=Administrator
+
+#Add ipmi either "True" or "False"
+ipmi=True
+
+#Examples for BIOS
+BIOS_G10={ "PowerRegulator": "OsControl", "EnergyPerfBias": "MaxPerf", "MinProcIdlePower": "NoCStates", "ProcTurbo": "Enabled", "BootMode": "LegacyBios", "UncoreFreqScaling": "Maximum", "EnergyEfficientTurbo": "Enabled", "IntelUpiPowerManagement": "Disabled", "NumaGroupSizeOpt": "Clustered", "MinProcIdlePkgState": "NoState", "WorkloadProfile": "Custom", "CollabPowerControl": "Disabled", "NicBoot1": "Disabled", "NicBoot2": "Disabled", "NicBoot3": "Disabled", "NicBoot4": "Disabled", "InternalSDCardSlot": "Disabled" }
+
+BIOS_G10PLUS={ "PowerRegulator": "OsControl", "EnergyPerfBias": "MaxPerf", "MinProcIdlePower": "NoCStates", "ProcTurbo": "Enabled", "BootMode": "LegacyBios", "UncoreFreqScaling": "Maximum", "EnergyEfficientTurbo": "Enabled", "IntelUpiPowerManagement": "Disabled", "NumaGroupSizeOpt": "Clustered", "MinProcIdlePkgState": "NoState", "WorkloadProfile": "Custom", "CollabPowerControl": "Disabled" }
+
+BIOS_G11={ "StaleAtoS": "Disabled", "CollabPowerControl": "Disabled", "EnergyEfficientTurbo": "Disabled", "EnergyPerfBias": "MaxPerf", "IntelUpiPowerManagement": "Disabled", "MinProcIdlePkgState": "NoState", "MinProcIdlePower": "NoCStates", "NumaGroupSizeOpt": "Clustered", "OptimizedPowerMode": "Disabled", "PowerRegulator": "StaticHighPerf", "SubNumaClustering": "Disabled", "UncoreFreqScaling": "Maximum", "WorkloadProfile": "Custom" }
+
+#"InternalSDCardSlot": "Disabled",
+#"NicBoot1": "Disabled", "NicBoot2": "Disabled", "NicBoot3": "Disabled", "NicBoot4": "Disabled",
+
+#Server in sub-groups
+[hpe]
+#hpe    baseuri=192.168.121.12 password=YV87N2XB
+
+ILOCZ242506D0	baseuri=192.168.121.199	password=P6FVW777
+ILOCZ242506CL	baseuri=192.168.121.155	password=JZD69QDS
+ILOCZ242506CX	baseuri=192.168.121.157	password=LM96H898
+ILOCZ242506CY	baseuri=192.168.121.229	password=P68D9YBM
+ILOCZ242506CZ	baseuri=192.168.121.247	password=TZ6LYR96
+ILOCZ242506CT	baseuri=192.168.121.215	password=H8YS2PK7
+ILOCZ242506CH	baseuri=192.168.121.152	password=ZK6ZBKLQ
+ILOCZ242506CR	baseuri=192.168.121.188	password=Y72TB6DG
+ILOCZ242506CW	baseuri=192.168.121.241	password=2NT857HF
+ILOCZ242506CS	baseuri=192.168.121.14	password=WX7CZ299
+ILOCZ242506CF	baseuri=192.168.121.186	password=5HCXK6X9
+ILOCZ242506D1	baseuri=192.168.121.214	password=67WC7RYB
+ILOCZ242506C9	baseuri=192.168.121.174	password=7PNM6V2N
+ILOCZ242506CB	baseuri=192.168.121.184	password=2J8FV968
+ILOCZ242506CD	baseuri=192.168.121.127	password=5KM25NYD
+ILOCZ242506CV	baseuri=192.168.121.196	password=2Q6CVHJQ
+ILOCZ242506CC	baseuri=192.168.121.149	password=XFN85ZXG
+ILOCZ242506BQ	baseuri=192.168.121.243	password=78FW2M7W
+ILOCZ242506BR	baseuri=192.168.121.56	password=N6J5JCTQ
+ILOCZ242506BN	baseuri=192.168.121.80	password=N65L2577
+ILOCZ242506CQ	baseuri=192.168.121.141	password=K6K8ZKK2
+ILOCZ242506CN	baseuri=192.168.121.103	password=5DMZB5FD
+ILOCZ242506CJ	baseuri=192.168.121.20	password=VXBQ28WJ
+ILOCZ242506CM	baseuri=192.168.121.129	password=F7JT27QK
+ILOCZ242506CK	baseuri=192.168.121.177	password=M98GJZHX
+ILOCZ242506CG	baseuri=192.168.121.140	password=5VM5RYKD
+ILOCZ242506C6	baseuri=192.168.121.203	password=9YTGC8SB
+ILOCZ242506C3	baseuri=192.168.121.17	password=L8JQ6CX9
+ILOCZ242506C7	baseuri=192.168.121.65	password=Q6XMRWH2
+ILOCZ242506C8	baseuri=192.168.121.146	password=PX2Y9BKB
+ILOCZ242506C5	baseuri=192.168.121.242	password=HSXL6LW2
+ILOCZ242506C4	baseuri=192.168.121.49	password=JZT8V8T2

@@ -1,0 +1,2 @@
+perl locfg.pl -f ilo_cfg_CZ23110020.xml -ilo5 -s 192.168.121.27 -u Administrator -p 86SS78DR
+perl locfg.pl -f ilo_cfg_CZ23110022.xml -ilo5 -s 192.168.121.249 -u Administrator -p R5S2M8C7

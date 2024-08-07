@@ -1,0 +1,10 @@
+{
+  "Comments": {
+    "Manufacturer": "HPE",
+    "Model": "ProLiant DL360 Gen11",
+    "BIOSFamily": "U54",
+    "BIOSDate": "03/01/2024",
+    "SerialNumber": "CZ242506C5",
+    "iLOVersion": "iLO 6 v1.53"
+  }
+}

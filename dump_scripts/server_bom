@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+import requests
+import json
+import sys
+import csv
+
+def write_raw(json_raw, sn):
+    filename = f"{sn}_raw_bom.json"
+    with open(filename, "w") as f:
+        json.dump(json_raw, f)
+    print(f"{filename} created.")
+    return
+
+def get_raw(sn):
+    request = requests.get(f"https://sapwebdisp01.cz.foxconn.com:4300/orion/polaris/ssn_sfc_bom?SERIAL_NUMBER={sn}")
+    if request.status_code == 200:
+        write_raw(request.json(), sn)
+
+        return json.loads(request.text)
+    else:
+        print("Failed to get info from polaris.")
+        exit(-1) 
+
+def create_table(raw_data, sn):
+    data = raw_data["DATA"]
+    raw_keys = data.keys()
+    top_keys = [i for i in raw_keys if i != "BOM_ITEMS"]
+    print(top_keys)
+    for key in top_keys:
+        print(f"{key}\t{data[key]}")
+    
+    filename = f"{sn}_bom.csv"
+    
+    with open(filename, 'w', newline="") as csvfile:
+        bom_writer = csv.writer(csvfile)
+
+        for key in top_keys:
+            bom_writer.writerow([key, data[key]])
+    
+        for item in data["BOM_ITEMS"]:
+            sns = item["SERIAL_NO"]
+            if sns != []:
+                for sn in sns:
+                    print(f"{item['MATERIAL']}\t{item['MATERIAL_DESCRIPTION']}\t{sn}")
+                    bom_writer.writerow([item['MATERIAL'], item['MATERIAL_DESCRIPTION'], item['QUANTITY'], sn])
+            else:
+                print(f"{item['MATERIAL']}\t{item['MATERIAL_DESCRIPTION']}")
+                bom_writer.writerow([item['MATERIAL'], item['MATERIAL_DESCRIPTION'], item['QUANTITY']])
+    return 0
+
+if __name__ == "__main__":
+    SN = ''
+
+    if len(sys.argv) != 2:
+        print("Usage:\nget_bom {SN}")
+        sys.exit(-1)
+    else:
+        SN = sys.argv[1]
+
+    raw_data = get_raw(SN)
+    create_table(raw_data, SN)
