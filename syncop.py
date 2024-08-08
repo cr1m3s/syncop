@@ -35,7 +35,7 @@ def copy_script_to_path(os_platform: str) -> Path:
     if os_platform == "Windows":
         target_path = Path(WINDOWS_PATH) / script_name
 
-    if not Path(LINUX_PATH).is_dir():
+    if not Path(LINUX_PATH).is_dir() and os_platform == "Linux":
         target_path.mkdir(parents=True, exist_ok=True)
 
     if script_path != target_path:
@@ -49,7 +49,7 @@ def copy_script_to_path(os_platform: str) -> Path:
 
 
 # Not sure about all code that supposed to work on windows
-# But so far it somehow worked 
+# But so far it somehow worked
 def check_scheduled_task(task_name: str) -> bool:
     result = subprocess.run(
         ["schtasks", "/Query", "/TN", task_name],
@@ -242,9 +242,13 @@ if __name__ == "__main__":
     logging.info(f"Looking for {replica_name}/{HASH_FILE} file.")
     dump_json = {}
 
-    logging.info(f"Generating file hashes for files in {source_name} directory has started.")
+    logging.info(
+        f"Generating file hashes for files in {source_name} directory has started."
+    )
     source_hashes = dir_hash(source_name)
-    logging.info(f"Generating file hashes for files in {source_name} directory is complete.")
+    logging.info(
+        f"Generating file hashes for files in {source_name} directory is complete."
+    )
 
     if config_file.is_file():
         logging.info(f"Found {replica_name}/{HASH_FILE}, reading it.")
