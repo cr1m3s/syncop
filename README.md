@@ -10,7 +10,7 @@ Synchronization performed periodically:
 
 -- For Linux used crontab. Expected interval in minutes: 1-59. If an interval outside this range is provided, it will default to 1 hour.
 
--- For Windows used scheduled task [Requires Administrator priviledges].
+-- For Windows used scheduled task [Requires Administrator priviledges]. Script able to create task, but task don't work [at least on the test machine].
 
 File creation/copying/removal operations logged to a file and to the console output:
 

@@ -233,9 +233,10 @@ if __name__ == "__main__":
 
     source_name = Path.cwd() / args.source
     replica_name = Path.cwd() / args.replica
+    logs_name = Path.cwd() / args.logs
 
-    setup_logging(args.logs)
-    setup_cronjob(source_name, replica_name, args.interval, args.logs)
+    setup_logging(logs_name)
+    setup_cronjob(source_name, replica_name, args.interval, logs_name)
 
     logging.info(f"Starting synchronization for {source_name} -> {replica_name}")
     config_file = Path(f"{replica_name}/{HASH_FILE}")
